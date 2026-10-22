@@ -16,10 +16,10 @@ A command-line task manager built with Python, SQLite, and SQLAlchemy as part of
 
 | Stage | What was implemented |
 | --- | --- |
-| 1 — Basic to-do list** | A simple interactive command-line menu for managing tasks. |
-| 2 — Data persistence** | SQLite storage through SQLAlchemy, including a task model, database session, and adding/retrieving tasks. |
-| 3 — Deadlines** | A deadline field, date parsing, and views for today's tasks, the next seven days, and all tasks sorted by deadline. |
-| 4 — Missed tasks and deletion** | Filtering tasks with expired deadlines and deleting a selected task from the database. |
+| 1 — Basic to-do list | A simple interactive command-line menu for managing tasks. |
+| 2 — Data persistence | SQLite storage through SQLAlchemy, including a task model, database session, and adding/retrieving tasks. |
+| 3 — Deadlines | A deadline field, date parsing, and views for today's tasks, the next seven days, and all tasks sorted by deadline. |
+| 4 — Missed tasks and deletion | Filtering tasks with expired deadlines and deleting a selected task from the database. |
 
 ## Technologies
 
@@ -33,17 +33,15 @@ A command-line task manager built with Python, SQLite, and SQLAlchemy as part of
 1. Make sure Python 3 is installed.
 2. Install SQLAlchemy:
 
-   ```bash
-   python -m pip install SQLAlchemy
-   ```
+   `python -m pip install SQLAlchemy`
 
 3. Open a terminal in the folder containing `todolist.py` and run:
 
-   ```bash
-   python todolist.py
-   ```
+   `python todolist.py`
 
 The application uses a local SQLite database (`todo.db`). Because the connection uses a relative database path, the database file is created or opened in the terminal's current working directory.
+
+The complete application is in `stage 4/todolist/todolist.py`, with earlier stages documenting its development.
 
 ## Menu
 
@@ -65,8 +63,4 @@ When adding a task, enter the deadline as `YYYY-MM-DD`. To delete a task, choose
 - Querying, filtering, and sorting records with SQLAlchemy
 - Adding and deleting records with database sessions and commits
 - Comparing and formatting dates with `datetime` and `timedelta`
-- Building an interactive command-line interface with functions and loops
-
-## Notes
-
-This project was developed through the four stages of the Hyperskill To-Do List (Python) learning project.
+- Building an interactive command-line
