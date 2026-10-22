@@ -1,6 +1,5 @@
 # To-Do List Stage 3: Deadlines and daily, weekly, and chronological task views
-"""
-Steps:
+"""Steps:
     1. Imports — SQLAlchemy, datetime, timedelta
     2. Database setup — engine and declarative Base
     3. Table definition — id, task, deadline
