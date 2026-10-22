@@ -1,28 +1,20 @@
-# To-Do List Stage 4: Overdue tasks and database record deletion
+# To-Do List Stage 4: Missed Tasks and Task Deletion
 """Steps:
-    1. Imports — SQLAlchemy, datetime, timedelta
-    2. Database setup — engine and declarative Base
-    3. Table definition — id, task, deadline
-    4. Table creation — Base.metadata.create_all(engine)
-    5. Session setup — sessionmaker() and session
-    6. Database functions:
-       - add_task(): Add a task with a deadline (YYYY-MM-DD)
-       - display_today_tasks(): Filter tasks due today
-       - display_week_tasks(): Display tasks for the next 7 days
-       - display_all_tasks(): Show all tasks sorted by deadline
-       - missed_tasks(): Display overdue tasks sorted by deadline
-       - delete_tasks(): Select and delete a task by its displayed number
-    7. Date handling — strptime(), strftime(), timedelta()
-    8. Database operations — filter(), order_by(), delete(), commit()
-    9. Menu function — todo_menu() with seven options
-   10. Program entry point — if __name__ == "__main__"
+New functionality:
+    1. missed_tasks():
+       - Display tasks with deadlines earlier than today
+       - Sort overdue tasks chronologically
+       - Handle cases where no overdue tasks exist
 
-Features:
-    - Store tasks and deadlines in an SQLite database
-    - Add and permanently delete tasks using SQLAlchemy
-    - Filter tasks by date and identify missed deadlines
-    - Display daily, weekly, overdue, and complete task lists
-    - Sort tasks chronologically by deadline
+    2. delete_tasks():
+       - Display all tasks sorted by deadline
+       - Allow users to select a task by its number
+       - Delete the selected record from the SQLite database
+       - Commit changes to ensure permanent deletion
+
+    3. Updated menu:
+       - Option 4: Missed tasks
+       - Option 
     - Select tasks for deletion using numbered lists
     - Format dates for readable console output
     - Navigate through an interactive command-line menu
