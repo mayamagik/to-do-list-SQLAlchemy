@@ -1,6 +1,6 @@
 # To-Do List Stage 1: Task management
 
-today = ["Do yoga", "Make a breakfast", "Learn the basics of SQL", "Learn about ORM"]
+today = ["Do yoga", "Make breakfast", "Learn the basics of SQL", "Learn about ORM"]
 
 def today_tasks(day, activities):
       print(f"{day}:")
